@@ -19,11 +19,17 @@
        Array.prototype.filter()
 4.CHRIS HANSHIA .C
        Array.prototype.filter()
+          The filter() method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
+          syntax-->
+          const words = ['mango', 'strawberry', 'papaya', 'kiwi', 'jackfruit', 'apple'];
+          const result = words.filter(word => word.length > 6);
+          console.log(result);
+          // Expected output: Array ["strawberry", "jackfruit"]
 
        Array.prototype.fill()
        Array.prototype.entries()
        Array.prototype.every()
-        Array.prototype.find()
+       Array.prototype.find()
 5.VIJAYA. R
        Array.prototype.find()
        Array.prototype.fill()
