@@ -1,10 +1,28 @@
 1. SOBHA S:
        Array.prototype.fill()
-       
+             The fill() method fills the elements with the given value.It used to overwrites the original array.
+             syntax: arr.fill(value,start,end)
+             from the syntax, start means the starting index from where the array is to be filled with the given value.
+             End means the index upto which array is to be filled with the given value.
+             eg: arr=[1,2,3,4,5,6,7,8]
+                if the commend is arr.fill(0), the output will be arr=[0,0,0,0,0,0,0,0].
+                if the commend is arr.file(0,3), the outout will be arr=[1,2,3,4,0,0,0,0].
+                if the commend is arr.file(0,3,6), the output will be arr=[1,2,3,4,0,0,0,8].
        Array.prototype.entries()
-       Array.prototype.every()
+              The Array.entries() method  is  used to get a new Array that contains the key and value pairs for each index of an array. 
+              Syntax:array.entries()
+      Array.prototype.every()
+              Array.every() method checks the all elements in the array satisfy the condition or not.
+              If the whole elementsof the arrat satisfies the condition the output willbe "TRUE",otherwis it will be "FALSE"
        Array.prototype.filter()
+              Array filter() Method creates a new array from a given array consisting of only those elements from the given array,
+              which satisfy a condition. 
+               Syntax: array.filter(callback(element, index, arr), thisValue)
         Array.prototype.find()
+              Array.find() method  is used to get the value of the first element in the array that satisfies the given condition. 
+              It checks all the elements of the array and whichever the first element satisfies the condition is going to print.
+               This function will not work function having the empty array elements, and also does not change the original array.
+               Syntax:array.find(function(currentValue, index, arr),thisValue).
 2.THIRKSHA RAJMA B.V
        Array.prototype.entries()
        Array.prototype.fill()
