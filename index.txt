@@ -1,22 +1,84 @@
 1. SOBHA S:
        Array.prototype.fill()
+       
        Array.prototype.entries()
        Array.prototype.every()
+       Array.prototype.filter()
+        Array.prototype.find()
 2.THIRKSHA RAJMA B.V
        Array.prototype.entries()
        Array.prototype.fill()
        Array.prototype.every()
+       Array.prototype.filter()
+       Array.prototype.find()
 3. FARZANA FATHIMA .A
        Array.prototype.every()
        Array.prototype.fill()
        Array.prototype.entries()
        Array.prototype.every()
+       Array.prototype.filter()
 4.CHRIS HANSHIA .C
        Array.prototype.filter()
+          
+          The filter() method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
+          example-->
+          const words = ['mango', 'strawberry', 'papaya', 'kiwi', 'jackfruit', 'apple'];
+          const result = words.filter(word => word.length > 6);
+          console.log(result);
+          // Expected output: Array ["strawberry", "jackfruit"]
+
        Array.prototype.fill()
+         
+         The fill() method changes all elements in an array to a static value, from a start index to an end index .
+         example-->
+         const array1 = [1, 2, 3, 4];
+         // Fill with 0 from position 2 until position 4
+         console.log(array1.fill(0, 2, 4));
+         // Expected output: Array [1, 2, 0, 0]
+         // Fill with 5 from position 1
+         console.log(array1.fill(5, 1));
+         // Expected output: Array [1, 5, 5, 5]
+
        Array.prototype.entries()
+
+        The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.
+         example-->
+         const a = ["a", "b", "c"];
+         for (const [index, element] of a.entries()) {
+              console.log(index, element);
+              }
+              // Expected output:  0 'a'
+              // Expected output:  1 'b'
+              // Expected output:  2 'c'
+          
+
        Array.prototype.every()
+
+       The every() method tests whether all elements in the array pass the test implemented by the provided function. It returns a Boolean value.
+        example-->
+        const isBelowThreshold = (currentValue) => currentValue < 40;
+        const array1 = [1, 30, 39, 29, 10, 13];
+        console.log(array1.every(isBelowThreshold));
+        // Expected output: true
+
+       Array.prototype.find()
+
+         The find() method returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
+         example-->
+         const inventory = [
+              { name: "apples", quantity: 2 },
+              { name: "bananas", quantity: 0 },
+              { name: "cherries", quantity: 5 },
+              ];
+              function isCherries(fruit) {
+                     return fruit.name === "cherries";
+                     }
+                     console.log(inventory.find(isCherries));
+                     //Expected output: { name: 'cherries', quantity: 5 }
+
 5.VIJAYA. R
        Array.prototype.find()
        Array.prototype.fill()
        Array.prototype.entries()
+       Array.prototype.every()
+       Array.prototype.filter()
