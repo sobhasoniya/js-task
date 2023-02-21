@@ -1,6 +1,13 @@
 1. SOBHA S:
        Array.prototype.fill()
-       
+             The fill() method fills the elements with the given value.It used to overwrites the original array.
+             syntax: arr.fill(value,start,end)
+             from the syntax, start means the starting index from where the array is to be filled with the given value.
+             End means the index upto which array is to be filled with the given value.
+             eg: arr=[1,2,3,4,5,6,7,8]
+                if the commend is arr.fill(0), the output will be arr=[0,0,0,0,0,0,0,0].
+                if the commend is arr.file(0,3), the outout will be arr=[1,2,3,4,0,0,0,0].
+                if the commend is arr.file(0,3,6), the output will be arr=[1,2,3,4,0,0,0,8].
        Array.prototype.entries()
        Array.prototype.every()
        Array.prototype.filter()
@@ -19,17 +26,10 @@
        Array.prototype.filter()
 4.CHRIS HANSHIA .C
        Array.prototype.filter()
-          The filter() method creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
-          syntax-->
-          const words = ['mango', 'strawberry', 'papaya', 'kiwi', 'jackfruit', 'apple'];
-          const result = words.filter(word => word.length > 6);
-          console.log(result);
-          // Expected output: Array ["strawberry", "jackfruit"]
-
        Array.prototype.fill()
        Array.prototype.entries()
        Array.prototype.every()
-       Array.prototype.find()
+        Array.prototype.find()
 5.VIJAYA. R
        Array.prototype.find()
        Array.prototype.fill()
