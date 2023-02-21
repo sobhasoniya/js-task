@@ -1,10 +1,22 @@
 1. SOBHA S:
        Array.prototype.fill()
+       Array.prototype.entries()
+       Array.prototype.every()
 2.THIRKSHA RAJMA B.V
        Array.prototype.entries()
+       Array.prototype.fill()
+       Array.prototype.every()
 3. FARZANA FATHIMA .A
+       Array.prototype.every()
+       Array.prototype.fill()
+       Array.prototype.entries()
        Array.prototype.every()
 4.CHRIS HANSHIA .C
        Array.prototype.filter()
+       Array.prototype.fill()
+       Array.prototype.entries()
+       Array.prototype.every()
 5.VIJAYA. R
        Array.prototype.find()
+       Array.prototype.fill()
+       Array.prototype.entries()
