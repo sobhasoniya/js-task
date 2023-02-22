@@ -39,7 +39,8 @@
        
        
        find()
-       This method will search inside of the array and it will return the first element for which the callback function return a true if it doenn't find one it will return undefined.
+       This method will search inside of the array and it will return the first element for which the callback function return a true,
+       if it doenn't find one it will return undefined.
        
        const names = ['Vibu','Viju','Subu','Subash'];
        const res = names.find(findVibu);
@@ -47,3 +48,43 @@
             return item === 'Vibu';
        }
        console.log(res);
+       
+       Eg:
+       const persons= [
+         {
+           name:'Viju',
+           age:22
+         },
+         {
+           name:'Subu',
+           age:21
+         },
+         {
+           name:'Vibu',
+           age:20
+         },
+       ],
+       const age=persons.find(findVibu).age;
+       function findVibu(person){
+           return person.name === 'Vibu';
+       }
+       
+    
+         
+       
+       
+       Fill()
+       
+       This element changes all the elements inside an array with the provided value.
+       
+       const numbers = [1,2,3,4,5];
+       numbers.fill(0);
+       console.log(numbers);
+       
+       fill method will change the array which is called upon and also it will return the array modified.
+       
+       
+       
+       
+       
+       
