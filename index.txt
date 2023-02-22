@@ -51,7 +51,20 @@
                 //check if all the array elements pass the function
                 let check=ageArray.every(checkAdult);  //output : false
        Array.prototype.filter()
+             Array filter() Method is used to create a new array from a given array consisting of only those elements 
+             from the given array which satisfy a condition set by the argument method. 
+             example:  
+              function isEven(value) {
+                  return value % 2 == 0;
+              }
+              var filtered = [11, 98, 31, 23, 944].filter(isEven);
+              console.log(filtered);  //output : [98,944]
        Array.prototype.find()
+             The find() method returns the first element in an array that passes a test function.
+             The find() accepts two arguments a callback function and an optional value to use for the this inside the callback function.
+             example:
+                let numbers = [1, 2, 3, 4, 5];
+                  console.log(numbers.find(e => e % 2 == 0)); // output : 2
 3. FARZANA FATHIMA .A
        Array.prototype.every()
               The every() method tests whether all elements in the array pass the test implemented by the provided function.
