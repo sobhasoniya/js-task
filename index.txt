@@ -25,8 +25,31 @@
                Syntax:array.find(function(currentValue, index, arr),thisValue).
 2.THIRKSHA RAJMA B.V
        Array.prototype.entries()
+             The entries() method returns a new array iterator object that contains the key or value pairs for each index in the array.
+             example: 
+                var arr=['a', 'b', 'c'];
+                var eArr=arr.entries();
+                console.log(eArr.next().value); //output : Array[0, 'a']
+                console.log(eArr.next().value); //output : Array[1, 'b']
+                console.log(eArr.next().value); //output : Array[2, 'c']
        Array.prototype.fill()
+             The fill() method changes all elements in an array to a static value, from a start index(default 0) to an 
+             end index(default array.length). It returns the modified array.
+             example:
+                let arrar=[1, 2, 3, 4];
+                console.log(array.fill(0, 2, 4)); // output : [1, 2, 0, 0]
+                console.log(array.fill(5, 1)); // output : [1, 5, 5, 5]
+                console.log(array.fill(6)); // output : [6, 6, 6, 6]
        Array.prototype.every()
+             The every() method checks if all the array elements pass the given test function.It returns a boolean value.
+             example:
+                //function check whether the age is 18 or above
+                function checkAdult(age) {
+                     return age >= 18;
+                }
+                const ageArray=[34, 23, 12, 20, 26];
+                //check if all the array elements pass the function
+                let check=ageArray.every(checkAdult);  //output : false
        Array.prototype.filter()
        Array.prototype.find()
 3. FARZANA FATHIMA .A
