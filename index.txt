@@ -36,3 +36,14 @@
        Array.prototype.entries()
        Array.prototype.every()
        Array.prototype.filter()
+       
+       
+       find()
+       This method will search inside of the array and it will return the first element for which the callback function return a true if it doenn't find one it will return undefined.
+       
+       const names = ['Vibu','Viju','Subu','Subash'];
+       const res = names.find(findVibu);
+       function findVibu(item){
+            return item === 'Vibu';
+       }
+       console.log(res);
