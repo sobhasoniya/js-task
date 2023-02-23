@@ -165,7 +165,7 @@
        Array.prototype.every()
        Array.prototype.filter()
        
-       find()
+find():
        This method will search inside of the array and it will return the first element for which the callback function return a true,
        if it doenn't find one it will return undefined.
        
@@ -197,7 +197,7 @@
        }
        
        
-       Fill()
+ Fill():
        
        This element changes all the elements inside an array with the provided value.
        
@@ -206,4 +206,55 @@
        console.log(numbers);
        
        fill method will change the array which is called upon and also it will return the array modified.
+       
+Entries:
+       syntax: array.entries()
+       
+Eg:
+const array1 = ['a', 'b', 'c'];
+
+const iterator1 = array1.entries();
+
+console.log(iterator1.next().value);
+// Expected output: Array [0, "a"]
+
+console.log(iterator1.next().value);
+// Expected output: Array [1, "b"]
+
+
+console.log(iterator1.next().value);
+// Expected output: Array [2, "c"]
+
+
+Every:
+this method returns true or false.
+const isBelowThreshold = (currentValue) => currentValue < 40;
+
+const array1 = [1, 30, 39, 29, 10, 13];
+
+console.log(array1.every(isBelowThreshold));
+// Expected output: true
+
+Eg:
+const ages = [32, 33, 16, 40];
+
+ages.every(checkAge)
+
+function checkAge(age) {
+  return age > 18;
+}
+
+filter:
+
+it creates a new array filled with elements that pass a test provided by a function.
+it does not execute the function for empty elements.
+it does not change the original array.
+
+Eg:
+const ages = [32, 33, 16, 40];
+const result = ages.filter(checkAdult);
+
+function checkAdult(age) {
+  return age >= 18;
+}
        
